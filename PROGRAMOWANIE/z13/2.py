@@ -1,10 +1,3 @@
-#Kazda liczbe z pliku zamien na system:
-#piatkowy
-#siodemkowy
-#trzynastkowy
-#wyznacz liczby ktore maja najwiecej cyfr o najwiekszej wartosci dla systemu 
-
-
 def DecToAny(number, system):
     number = int(number)
     converted = ""
