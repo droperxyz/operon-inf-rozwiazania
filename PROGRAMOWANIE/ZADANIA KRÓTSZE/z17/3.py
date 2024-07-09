@@ -39,3 +39,5 @@ for line in file:
 
 for key, value in solution.items():
     print(f"{key}: {value}")
+
+file.close()
