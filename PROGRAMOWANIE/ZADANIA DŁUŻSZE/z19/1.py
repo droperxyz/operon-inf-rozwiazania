@@ -1,7 +1,8 @@
 import math
 
+
 def CalculateDistance(x, y):
-    return math.sqrt(abs((0 - x) **2) + abs((0 + y)**2))
+    return math.sqrt((x ** 2) + (y ** 2))
 
 
 file = open('oddzialy.txt', 'r')
@@ -25,7 +26,7 @@ for line in file:
         losses += soldiers_in_each_squad * 0.25
     elif distance_to_squad == min_distance:
         losses += soldiers_in_each_squad * 0.25
-        
+
 file.close()
 
 print(losses, out_of_range)
