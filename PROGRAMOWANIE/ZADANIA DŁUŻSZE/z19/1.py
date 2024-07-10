@@ -25,5 +25,7 @@ for line in file:
         losses += soldiers_in_each_squad * 0.25
     elif distance_to_squad == min_distance:
         losses += soldiers_in_each_squad * 0.25
+        
+file.close()
 
 print(losses, out_of_range)
