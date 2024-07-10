@@ -8,13 +8,13 @@ file = open('oddzialy.txt', 'r')
 losses = 0
 out_of_range = 0
 soldiers_in_each_squad = 100
+min_distance = 1
+max_distance = 20
 
 for line in file:
     line = line.split()
     x = int(line[0])
     y = int(line[1])
-    min_distance = 1
-    max_distance = 20
     distance_to_squad = CalculateDistance(x, y)
 
     if distance_to_squad < min_distance or distance_to_squad > max_distance:
